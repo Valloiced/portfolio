@@ -168,6 +168,10 @@
     cursor: pointer;
 }
 
+.schoolwork a {
+    text-decoration: none;
+}
+
 .schoolwork--output {
     width: 100%;
     height: 300px;
