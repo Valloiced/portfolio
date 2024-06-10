@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/layout.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/school.css" type="text/css" />
+    <title>Vince Sualog</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo--container">
+            <a href="/">
+                <img id="logo" src="../assets/portfolio-logo.png" />
+            </a>
+        </div>
+        <button id="sidebar--open">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="nav" class="animate" data-animation="fadeIn">
+            <a href="/#about--section">About</a>
+            <a href="/#skills--section">Skills</a>
+            <a href="/#projects--section">Projects</a>
+            <a href="/school">PnC</a>
+        </nav>
+    </div>
+    <div id="sidebar">
+        <div id="sidebar--close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <hr />
+        <nav id="sidebar--nav">
+            <a href="/#about--section">About</a>
+            <a href="/#skills--section">Skills</a>
+            <a href="/#projects--section">Projects</a>
+            <a href="/school">PnC</a>
+        </nav>
+    </div>
+    <div id="content">
+        <section id="pnc--section">
+            <div id="institution--banner" class="animate" data-animation="swipeRight">
+                <h1>Academic Institution</h1>
+                <h3>University of Cabuyao (UC)</h3>
+            </div>
+            <div id="philosophy--container">
+                <h2 id="philosophy--header">Philosophy</h2>
+                <div id="philosophy--wrapper">
+                    <div id="mission" class="animate" data-animation="fadeUp">
+                        <h2>MISSION</h2>
+                        <p>As an institution of higher learning, UC (PnC) is committed to equip individuals with knowledge, skills, and values that will enable them to achieve their professional goals & provide leadership and service for national development.</p>
+                    </div>
+                    <div id="vision" class="animate" data-animation="fadeUp">
+                        <h2>VISION</h2>
+                        <p>A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="schoolwork--section">
+            <h1>School Works</h1>
+            <div id="schoolwork--container">
+                <div id="nav--terms">
+                    <button id="nav--prelims" onclick="toggleTerms(this)" class="nav--active">Prelims</button>
+                    <button id="nav--midterms" onclick="toggleTerms(this)">Midterms</button>
+                    <button id="nav--finals" onclick="toggleTerms(this)">Finals</button>
+                </div>
+                <div id="prelims" class="schoolwork--wrapper schoolwork--visible">
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/prelims/Prelim Lab Activity 1.jpg" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Prelim Lab Activity 1
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/prelims/Prelim Lab Activity 2.jpg" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Prelim Lab Activity 2
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/prelims/Prelim Lab Activity 3.jpg" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Prelim Lab Activity 3
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/prelims/Prelim Quiz 1.jpg" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Prelim Quiz 1
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/prelims/Prelim Exam.jpg" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Prelim Exam
+                        </h2>
+                    </div>
+                </div>
+                <div id="midterms" class="schoolwork--wrapper">
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Practice 1.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Practice 1
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Practice 1.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Practice 2
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Practice 1.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Practice 3
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Lab Activity 1.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Lab Activity 1
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Lab Activity 2.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Lab Activity 2
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Lab Activity 3.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Lab Activity 3
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/midterms/Midterm Exam.jpg" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Midterm Lab Activity 3
+                        </h2>
+                    </div>
+                </div>
+                <div id="finals" class="schoolwork--wrapper">
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/finals/Finals Activity 1.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Finals Activity 1 - 50% Wirefrane
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/finals/Finals Assignment 1.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Finals Assignment 1 - 50% Wireframe Completed
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/finals/Finals Activity 2.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Finals Activity 2 - 100% Wireframe Completed
+                        </h2>
+                    </div>
+                    <div class="schoolwork">
+                        <div class="schoolwork--output">
+                            <img src="/assets/finals/Finals Activity 3.png" />
+                        </div>
+                        <h2 class="schoolwork--title">
+                            Finals Activity 3 - 50% of Website Completed
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://animejs.com/lib/anime.min.js"></script>
+<script src="../script.js"></script>
+<script src="../scroll-animate.js"></script>
+</html>

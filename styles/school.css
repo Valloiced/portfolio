@@ -1,0 +1,230 @@
+/* SCHOOL */
+
+#pnc--section {
+    padding-top: 4em;
+    background-color: var(--PRIMARY-COL);
+    height: auto;
+}
+
+#institution--banner {
+    width: 100%;
+    background: linear-gradient(to right, var(--SECONDARY-COL), var(--TERTIARY-COL));
+    padding: 2em 4em;
+}
+
+#institution--banner h1 {
+    color: white;
+    font-family: var(--FONT-MONT);
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 0.1ch;
+}
+
+#institution--banner h3 {
+    color: white;
+    font-family: var(--FONT-OPEN);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#philosophy--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    background-color: var(--PRIMARY-COL);
+    padding: 4em 0em;
+}
+
+#philosophy--header {
+    color: var(--SECONDARY-COL);
+    font-family: var(--FONT-MONT);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+#philosophy--wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#mission,
+#vision
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 3px 4px 10px
+        color-mix(in srgb, var(--TEXT-COL) 25%, transparent)
+    ;
+}
+
+#mission h2,
+#vision h2
+{
+    color: var(--SECONDARY-COL);
+    font-family: var(--FONT-MONT);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#mission p,
+#vision p
+{
+    width: 75%;
+    color: var(--TEXT-COL);
+    font-family: var(--FONT-MONT);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* SCHOOLWORK */
+
+#schoolwork--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    gap: 6em;
+    height: auto;
+}
+
+#schoolwork--section h1 {
+    color: var(--SECONDARY-COL);
+    font-family: var(--FONT-MONT);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+#schoolwork--container {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+#nav--terms {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#nav--terms button {
+    opacity: 70%;
+    color: var(--TEXT-COL);
+    font-family: var(--FONT-MONT);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    transition: all 100ms ease;
+}
+
+#nav--terms button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav--active {
+    color: var(--SECONDARY-COL) !important;
+}
+
+.schoolwork--wrapper {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 100%;
+    gap: 4em;
+    transition: all 250ms ease;
+}
+
+.schoolwork--visible {
+    display: grid;
+}
+
+.schoolwork {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 4px 10px
+        color-mix(in srgb, var(--TEXT-COL) 25%, transparent)
+    ;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.schoolwork--output {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.schoolwork--output img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 100ms ease-in;
+}
+
+.schoolwork--output:hover > img {
+    transform: scale(0.9);
+    object-fit: contain;
+}
+
+.schoolwork--title {
+    color: var(--TEXT-COL);
+    opacity: 0.75;
+    font-family: var(--FONT-OPEN);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1em 2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .schoolwork--wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 782px) {
+    #institution--banner {
+        padding: 2em 1em;
+    }
+
+    #philosophy--wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        gap: 2em;
+    }
+
+    #mission,
+    #vision {
+        width: 100%;
+    }
+
+    #schoolwork--section {
+        padding: 4em 1em;
+    }
+
+    .schoolwork--wrapper {
+        grid-template-columns: 1fr;
+    }
+}

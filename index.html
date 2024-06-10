@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/layout.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/home.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/about.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/skills.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/projects.css" type="text/css" />
+    <title>Vince Sualog</title>
+</head> 
+<body>
+    <div id="navbar">
+        <div id="logo--container">
+            <a href="/">
+                <img id="logo" src="./assets/portfolio-logo.png" />
+            </a>
+        </div>
+        <button id="sidebar--open">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="nav">
+            <a href="#about--section">About</a>
+            <a href="#skills--section">Skills</a>
+            <a href="#projects--section">Projects</a>
+            <a href="/school">PnC</a>
+        </nav>
+    </div>
+    <div id="sidebar">
+        <div id="sidebar--close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <hr />
+        <nav id="sidebar--nav">
+            <a href="#about--section">About</a>
+            <a href="#skills--section">Skills</a>
+            <a href="#projects--section">Projects</a>
+            <a href="/school">PnC</a>
+        </nav>
+    </div>
+    <div id="content">
+        <section id="home--section">
+            <div id="home--container">
+                <div id="introduction">
+                    <h1>Hi! I'm <span>Vince Sualog</span></h1>
+                    <h2>Full-Stack Web Developer</h2>
+                    <p>"Adaptation is a universal skill of success"</p>
+                    <button>Contact Me!</button>
+                </div>
+                <div id="profile--container">
+                    <img id="profile--img" src="./assets/profile-img-r.png" />
+                    <img class="bg--blob" src="./assets/blob.svg"/>
+                    <img class="bg--blob" src="./assets/blob.svg"/>
+                    <img class="bg--blob" src="./assets/blob.svg"/>
+                </div>
+            </div>
+        </section> 
+        <section id="about--section">
+            <div id="about--header" class="section--header">
+                <h2>Let me introduce myself&nbsp;</h2>
+                <h1>About Me</h1>
+            </div>
+            <div id="about--container">
+                <div id="about--profile" class="animate" data-animation="fadeUp">
+                    <img src="./assets/profile-img-v.png">
+                </div>
+                <div id="about--details" class="animate" data-animation="fadeUp">
+                    <h2>
+                        <span>Hello</span>
+                        and
+                        <span>Welcome!</span>
+                    </h2>
+                    <p>
+                        A first-year college student aspiring to excel as a Full-stack Developer. Proficient in multiple languages and frameworks, I'm dedicated to expanding my skills, seeking innovative projects, and collaborating in tech.
+                    </p>
+                    <a href="#projects--section"><button>My Projects</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="skills--section">
+            <div id="skills--header" class="section--header">
+                <h2>Explore my Technical&nbsp;</h2>
+                <h1>Skills</h1>
+            </div>
+            <div id="skills--container">
+                <div class="skills--wrapper">
+                    <h1 class="skills--category">Web Development</h1>
+                    <div class="skills animate" data-animation="fadeUp">
+                        <div class="brand"><img src="assets/brands/html.png" /></div>
+                        <div class="brand"><img src="assets/brands/css.png" /></div>
+                        <div class="brand"><img src="assets/brands/javascript.png" /></div>
+                        <div class="brand"><img src="assets/brands/typescript.png" /></div>
+                        <div class="brand"><img src="assets/brands/npm.png" /></div>
+                        <div class="brand"><img src="assets/brands/nodejs.png" /></div>
+                        <div class="brand"><img src="assets/brands/mongodb.png" /></div>
+                        <div class="brand"><img src="assets/brands/react 2.png" /></div>
+                        <div class="brand"><img src="assets/brands/nextjs.png" /></div>
+                        <div class="brand"><img src="assets/brands/tailwind.png" /></div>
+                    </div>
+                </div>
+                <div class="skills--wrapper">
+                    <h1 class="skills--category">Web Tools and Technologies</h1>
+                    <div class="skills animate" data-animation="fadeUp">
+                        <div class="brand"><img src="assets/brands/git.png" /></div>
+                        <div class="brand"><img src="assets/brands/firebase.png" /></div>
+                        <div class="brand"><img src="assets/brands/figma.png" /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects--section">
+            <div id="projects--header" class="section--header">
+                <h2>Browse my Recent&nbsp;</h2>
+                <h1>Projects</h1>
+            </div>
+            <div id="projects--container">
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/csharp-documentation.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://csharp-brief-documentation-dev.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/technical-documentation-c-sharp" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>C# Technical Documentation</h1>
+                    </div>
+                </div>
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/game-of-life.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://gameoflife-al.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/game-of-life" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>Game of Life</h1>
+                    </div>
+                </div>
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/pinnacle-dark-mode.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://drive.google.com/uc?export=download&id=1_3F2-3RM1zhzZvWM36GXtvHd-E1wbRfU" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/pinnacle-dark-mode" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>Pinnacle Dark Mode Extension</h1>
+                    </div>
+                </div>
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/quote-generator.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://quote-generator-al.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/random-quote-generator" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>Random Quote Generator</h1>
+                    </div>
+                </div>
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/simple-pong.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://not-so-impressive-pong.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/pong" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>Simple Pong</h1>
+                    </div>
+                </div>
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/snake-game.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://snake-game-by-vince.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/Snake-game-canvas" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>Simple Snake Game</h1>
+                    </div>
+                </div>
+                <div class="project--wrapper">
+                    <div class="project--preview">
+                        <img src="/assets/projects/traveltrove.png" />
+                    </div>
+                    <div class="project--details">
+                        <div class="project--actions">
+                            <a href="https://traveltrove-al.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Valloiced/travel-trove" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <h1>TravelTrove</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://animejs.com/lib/anime.min.js"></script>
+<script src="script.js"></script>
+<script src="scroll-animate.js"></script>
+</html>
